@@ -43,6 +43,15 @@ Si falta alguna, el navegador mostrara errores como:
 Failed to resolve module specifier "luxon"
 ```
 
+Para ArcGIS 4.33 el `importmap` de `index.html` apunta a:
+
+```text
+vendor/arcgis/luxon/build/es6/luxon.mjs
+vendor/arcgis/@esri/calcite-components/dist/components/index.js
+```
+
+Verifica esas dos URLs en GitHub Pages si ves errores 404 en consola.
+
 ## Configuracion
 
 En `js/config.js`, cambia:
