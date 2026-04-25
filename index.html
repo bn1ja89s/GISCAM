@@ -9,6 +9,24 @@
       content="PWA de captura geoespacial para exploracion de campo con ArcGIS, soporte offline e IndexedDB."
     >
     <title>PWA Exploracion</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "luxon": "./vendor/arcgis/luxon/build/es6/luxon.js",
+          "luxon/": "./vendor/arcgis/luxon/",
+          "marked": "./vendor/arcgis/marked/lib/marked.esm.js",
+          "marked/": "./vendor/arcgis/marked/",
+          "@zip.js/zip.js": "./vendor/arcgis/@zip.js/zip.js/index.js",
+          "@zip.js/zip.js/": "./vendor/arcgis/@zip.js/zip.js/",
+          "@esri/arcgis-html-sanitizer": "./vendor/arcgis/@esri/arcgis-html-sanitizer/dist/esm/index.js",
+          "@esri/arcgis-html-sanitizer/": "./vendor/arcgis/@esri/arcgis-html-sanitizer/",
+          "@esri/calcite-components": "./vendor/arcgis/@esri/calcite-components/dist/components/index.js",
+          "@esri/calcite-components/": "./vendor/arcgis/@esri/calcite-components/",
+          "@vaadin/grid": "./vendor/arcgis/@vaadin/grid/vaadin-grid.js",
+          "@vaadin/grid/": "./vendor/arcgis/@vaadin/grid/"
+        }
+      }
+    </script>
     <link rel="manifest" href="./manifest.webmanifest">
     <link rel="icon" href="./assets/icons/icon-192.svg" type="image/svg+xml">
     <link rel="stylesheet" href="./css/reset.css">

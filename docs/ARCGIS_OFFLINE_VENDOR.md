@@ -21,6 +21,28 @@ vendor/
 
 La forma mas simple es instalar `@arcgis/core@4.33` en una carpeta temporal y copiar `node_modules/@arcgis/core` a `vendor/arcgis/@arcgis/core`.
 
+Tambien debes copiar las dependencias ESM que ArcGIS importa con nombres como `luxon`:
+
+```text
+vendor/
+  arcgis/
+    luxon/
+    marked/
+    @zip.js/
+      zip.js/
+    @esri/
+      arcgis-html-sanitizer/
+      calcite-components/
+    @vaadin/
+      grid/
+```
+
+Si falta alguna, el navegador mostrara errores como:
+
+```text
+Failed to resolve module specifier "luxon"
+```
+
 ## Configuracion
 
 En `js/config.js`, cambia:
